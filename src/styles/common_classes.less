@@ -1,0 +1,142 @@
+.extremities {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.buttons_block {
+    display: flex;
+    gap: 18px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.orange_button {
+    background: #FB8F1D;
+    border: none;
+    color: #FFFFFF;
+}
+
+.orange_border_button {
+    border: 1px solid #FB8F1D;
+    color: #FB8F1D;
+    background-color: #ffffff;
+}
+
+.deco {
+    position: relative;
+}
+
+.deco_el {
+    position: absolute;
+}
+
+.orange_link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: #FB8F1D;
+}
+
+.control_button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #D7D7D7;
+    border-radius: 20px;
+    stroke: #D7D7D7;
+    background-color: #ffffff;
+}
+
+.control_active {
+    stroke: #000000;
+    border-color: #000000;
+}
+
+.foot_title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 60px;
+    color: #000000;
+    display: flex;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+.foot_select {
+    border: none;
+    background-color: inherit;
+    appearance: none;
+    overflow: visible;
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 38px;
+    color: #848484;
+    overflow-y: visible;
+    @media (max-width: 992px) {
+        height: auto;
+        font-size: 14px;
+        line-height: 20px;
+        appearance: auto;
+    }
+}
+
+.foot_link {
+    display: block;
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 38px;
+    color: #848484;
+    @media (max-width: 768px) {
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
+
+.nav_list {
+    list-style-type: none;
+}
+
+.foot_menu_arrow {
+    display: none;
+    @media (max-width: 992px) {
+        display: block;
+    }
+}
+
+.foot_menu {
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+.foot_title:hover+.foot_menu {
+    @media (max-width: 992px) {
+        display: block;
+    }
+}
+
+.foot_menu:hover {
+    @media (max-width: 992px) {
+        display: block;
+    }
+}
+
+.container {
+    width: 80%;
+    @media (max-height: 768px) {
+        margin-bottom: 100px;
+    }
+}

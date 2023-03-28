@@ -1,0 +1,245 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Thousand sunny 
+        link(rel="shortcut icon" href="img/icons/logo.svg" type="image/x-icon")
+        link(rel="stylesheet" href="styles/styles.min.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet")
+    body 
+        header(class="head extremities")
+            a.head__logo(href="") 
+                img.head__logo__img(src="img/icons/logo.svg" alt="logo" class="")
+
+            nav.head__nav 
+                .head__nav__menu_btn 
+                    .head__nav__menu_btn__line.burger_first 
+                    .head__nav__menu_btn__line.burger_second 
+                    .head__nav__menu_btn__line.burger_last 
+                ul.head__nav__list.nav_list
+                    li.head__nav__list__item
+                        a(href="#home" class="head__nav__list__item__link active_anchor") Home
+                    li.head__nav__list__item
+                        a.head__nav__list__item__link(href="#destinations") Destinations
+                    li.head__nav__list__item
+                        a.head__nav__list__item__link(href="#about") About
+                    li.head__nav__list__item
+                        a.head__nav__list__item__link(href="#partner") Partner
+                    li(class="head__nav__list__item buttons_block")
+                        button(class="head__nav__list__item__button orange_border_button") Login
+                        button(class="head__nav__list__item__button orange_button") Register
+
+        section(class="home container anchor_target" id="home") 
+            div(class="home__left deco") 
+                img(src="img/icons/element2.svg" alt="deco" class="home__left__deco  deco_el")
+            h1.home__title Explore and Travel
+            div(class="home__top deco") 
+                img(src="img/icons/element3.svg" alt="deco" class="home__top__deco  deco_el")
+            img.home__img(src="img/pics/thousand-01.png" alt="traveller")
+            .home__finder 
+                h3.home__finder__title Holiday finder
+                hr.home__finder__line
+                form.home__finder__form(action="")
+                    select#Location.home__finder__form__input(name="Location") 
+                        option(disable) Location
+                    select#Activity.home__finder__form__input(name="Activity")
+                        option(disable) Activity 
+                    select#Grade.home__finder__form__input(name="Grade")
+                        option(disable) Grade 
+                    select#Date.home__finder__form__input(name="Date")
+                        option(disable) Date 
+                    .home__finder__form__buttons 
+                        button(class="home__finder__form__buttons__button orange_button") Explore
+            .home__bottom
+                div(class="home__bottom__block deco") 
+                    img(src="img/icons/element.svg" alt="deco" class="home__bottom__block__deco deco_el")
+        section(class="intro container") 
+
+            img.intro__img(src="img/pics/thousand-02.png" alt="traveller2")
+            div(class="intro__top deco")
+                img(src="img/icons/element3.svg" alt="deco" class="intro__top__deco deco_el")
+            .intro__explore 
+                h2.intro__explore__title A new way to explore the world 
+                p.intro__explore__text.
+                    For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect 
+                    trip, but now, they can also let Lonely Planet Experiences lead the way
+                .intro__explore__bottom 
+                    button(class="intro__explore__bottom__button orange_button") Learn more
+                    div(class="intro__explore__bottom__right deco")
+                        img(src="img/icons/element.svg" alt="deco" class="intro__explore__right__deco deco_el")
+        section(class="destination container  anchor_target" id="destinations") 
+            div(class="destination__top deco")
+                img(src="img/icons/element.svg" alt="deco" class="destination__deco  deco_el")
+            div(class="destination__left deco")
+                img(src="img/icons/element3.svg" alt="deco" class="destination__left__deco deco_el")
+            .destination__head 
+                h2.destination__head__title Featured destinations
+                a(href="" class="destination__head__link orange_link") View all
+                    img.orange_link__arrow(src="img/icons/vector1.svg" alt="arrow")
+            .destination__cards 
+                //- figure.destination__cards__card
+                //- img.destination__cards__card__img(src="img/pics/raja_ampat.jpg" alt="Raja Ampat")
+                //- figcaption.destination__cards__card__caption
+                //-     h3.destination__cards__card__caption__place Raja Ampat
+                //-     p.destination__cards__card__caption__country Indonesia
+                //- figure.destination__cards__card
+                //-     img.destination__cards__card__img(src="img/pics/fanjingshan.jpg" alt="Fanjingshan")
+                //-     figcaption.destination__cards__card__caption
+                //-         h3.destination__cards__card__caption__place Fanjingshan
+                //-         p.destination__cards__card__caption__country China
+                //- figure.destination__cards__card
+                //-     img.destination__cards__card__img(src="img/pics/vevey.jpg" alt="Vevey")
+                //-     figcaption.destination__cards__card__caption
+                //-         h3.destination__cards__card__caption__place Vevey
+                //-         p.destination__cards__card__caption__country Switzerland
+                //- figure.destination__cards__card
+                //-     img.destination__cards__card__img(src="img/pics/skadar.jpg" alt="Skadar")
+                //-     figcaption.destination__cards__card__caption
+                //-         h3.destination__cards__card__caption__place Skadar
+                //-         p.destination__cards__card__caption__country Montenegro
+            div(class="destination__bottom deco")
+                img(src="img/icons/element.svg" alt="deco" class="destinations__deco  deco_el")
+        section(class="about container anchor_target" id="about") 
+            .about__guides 
+                div(class="about__guides__top deco")
+                    img(src="img/icons/element.svg" alt="deco" class="about__guides__top__deco  deco_el")
+                h2.about__guides__title Guides by Thousand Sunny
+                p.about__guides__text.
+                    Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and 
+                    during a trip.
+                .about__guides__foot
+                    button(class="about__guides__foot__button orange_button") Download
+                    div(class="about__guides__foot__right deco")
+                        img(src="img/icons/element3.svg" alt="deco" class="about__guides__foot__right__deco deco_el")
+            img.about__guides__img(src="img/pics/thousand-03.png" alt="tourist")
+            div(class="about__guides__right deco")
+                img(src="img/icons/element3.svg" alt="deco" class="about__guides__right__deco deco_el")
+        section(class="partner container anchor_target" id="partner") 
+            div(class="partner__left deco")
+                img(src="img/icons/element.svg" alt="deco" class="partner__left__deco deco_el")
+            h2.partner__title Testimonials
+            article.partner__testimonials 
+                .partner__testimonials__block 
+                    form.partner__testimonials__block__grade 
+                        input#sr1(type="radio" name="starRating" class="rating__input partner__testimonials__block__grade__star" value="1")
+                        label(for="sr1" class="rating__star partner__testimonials__block__grade__label" aria-label="terrible") 
+                        input#sr2(type="radio" name="starRating" class="rating__input partner__testimonials__block__grade__star" value="2")
+                        label(for="sr2" class="rating__star partner__testimonials__block__grade__label" aria-label="bad")
+                        input#sr3(type="radio" name="starRating" class="rating__input partner__testimonials__block__grade__star" value="3")
+                        label(for="sr3" class="rating__star partner__testimonials__block__grade__label" aria-label="normal")
+                        input#sr4(type="radio" name="starRating" class="rating__input partner__testimonials__block__grade__star" value="4")
+                        label(for="sr4" class="rating__star partner__testimonials__block__grade__label" aria-label="good")
+                        input#sr5(type="radio" name="starRating" class="rating__input partner__testimonials__block__grade__star" value="5" checked)
+                        label(for="sr5" class="rating__star partner__testimonials__block__grade__label" aria-label="excellent")
+
+                    p.partner__testimonials__block__text.
+                        “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet 
+                        turpis nec”
+                    h3.partner__testimonials__block__author Edward Newgate
+                    p.partner__testimonials__block__whois Founder Circle
+                figure.partner__testimonials__reviewer 
+                    img.partner__testimonials__reviewer__photo(src="img/pics/image_6.jpg" alt="Edward Newgate")
+                    img.partner__testimonials__reviewer__deco1(src="img/icons/element2.svg" alt="deco")
+                    img.partner__testimonials__reviewer__deco2(src="img/icons/element3.svg" alt="deco")
+                    figcaption.partner__testimonials__reviewer__control
+                        button(class="partner__testimonials__reviewer__control__arrow_backward control_button" disabled) 
+                            <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10L1 5.5L5 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        button(class="partner__testimonials__reviewer__control__arrow_forward control_button control_active") 
+                            <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5.5L1 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+        section(class="stories container") 
+            div(class="stories__top deco")
+                img(src="img/icons/element3.svg" alt="deco" class="stories__top__deco__el deco_el")
+            div(class="stories__left deco")
+                img(src="img/icons/element.svg" alt="deco" class="stories__deco deco_el")
+            .stories__head 
+                h2.stories__head__title Trending stories
+                a(class="stories__head__link orange_link") View all
+                    img.orange_link__arrow(src="img/icons/vector1.svg" alt="arrow")
+            .stories__block 
+                //- figure.stories__block__story
+                //-     .stories__block__story__image 
+                //-         img.stories__block__story__image__img(src="img/pics/image12.jpg" alt="")
+                //-     figcaption.stories__block__story__caption 
+                //-         h3.stories__block__story__caption__title The many benefits of taking a healing holiday
+                //-         p.stories__block__story__caption__description ‘Helaing holidays’ are on the rise tohelp maximise your health and happines...
+                //-         a(class="stories__block__story__caption__link orange_link" href="") Read more
+                //- figure.stories__block__story
+                //-     .stories__block__story__image 
+                //-         img.stories__block__story__image__img(src="img/pics/image13.jpg" alt="")
+                //-     figcaption.stories__block__story__caption 
+                //-         h3.stories__block__story__caption__title The best Kyoto restaurant to try Japanese food
+                //-         p.stories__block__story__caption__description From tofu to teahouses, here’s our guide to Kyoto’s best restaurants to visit...
+                //-         a(class="stories__block__story__caption__link orange_link" href="") Read more
+                //- figure.stories__block__story
+                //-     .stories__block__story__image 
+                //-         img.stories__block__story__image__img(src="img/pics/image14.jpg" alt="")
+                //-     figcaption.stories__block__story__caption 
+                //-         h3.stories__block__story__caption__title Skip Chichen Itza and head to this remote Yucatan
+                //-         p.stories__block__story__caption__description It’s remote and challenging to get, but braving the jungle and exploring these ruins without the...
+                //-         a(class="stories__block__story__caption__link orange_link" href="") Read more
+                //- figure.stories__block__story
+                //-     .stories__block__story__image 
+                //-         img.stories__block__story__image__img(src="img/pics/image15.jpg" alt="")
+                //-     figcaption.stories__block__story__caption 
+                //-         h3.stories__block__story__caption__title Surf’s up at these beginner spots around the world
+                //-         p.stories__block__story__caption__description If learning to surf has in on your to-do list for a while, the good news is: it’s never too late...
+                //-         a(class="stories__block__story__caption__link orange_link" href="") Read more
+            div(class="stories__bottom deco")
+                img(src="img/icons/element.svg" alt="deco" class="stories__bottom__deco deco_el")
+        footer(class="foot extremities")
+            .foot__links 
+                .foot__links__ts 
+                    a.foot__links__ts__logo(href="") 
+                        img.foot__links__ts__logo__img(src="img/icons/logo.svg" alt="logo")
+                    a.foot_link.foot__links__ts__link(href="") Plan and book your perfect trip with expert advice, travel tips destination information from us
+                    a.foot_link.foot__links__ts__link2(href="") ©2020 Thousand Sunny. All rights reserved
+                .foot__links__destinations.foot_links 
+                    h3(class="foot__links__destination__title foot_title") Destinations
+                        span.foot_menu_arrow &#9660;
+                    .foot_menu.nav_list 
+                        a.foot_link(href="") Africa
+                        a.foot_link(href="") Antarctica
+                        a.foot_link(href="") Asia
+                        a.foot_link(href="") Europe
+                        a.foot_link(href="") America
+
+                .foot__links__shop.foot_links 
+                    h3(class="foot__links__shop__title foot_title") Shop
+                        span.foot_menu_arrow &#9660;
+                    .foot_menu.nav_list 
+                        a.foot_link(href="") Destination Guides
+                        a.foot_link(href="") Pictorial &amp; Gifts
+                        a.foot_link(href="") Special Offers
+                        a.foot_link(href="") Delivery Times
+                        a.foot_link(href="") FAQs
+
+                .foot__links__interests.foot_links
+                    h3(class="foot__links__interests__title foot_title") Interests
+                        span.foot_menu_arrow &#9660;
+                    .foot_menu.nav_list 
+                        a.foot_link(href="") Adventure Travel
+                        a.foot_link(href="") Art And Culture
+                        a.foot_link(href="") Wildlife And Nature
+                        a.foot_link(href="") Family Holidays
+                        a.foot_link(href="") Food And Drink
+
+            .foot__social
+                a.foot__social__link(href="")
+                    img.foot__social__link__img(src="img/icons/twitter.svg" alt="twitter")
+                a.foot__social__link(href="")
+                    img.foot__social__link__img(src="img/icons/vk.svg" alt="vk")
+                a.foot__social__link(href="")
+                    img.foot__social__link__img(src="img/icons/ok.svg" alt="odnoklassniki")
+                a.foot__social__link(href="")
+                    img.foot__social__link__img(src="img/icons/linked_in.svg" alt="linked in")
+                a.foot__social__link(href="")
+                    img.foot__social__link__img(src="img/icons/youtube.svg" alt="youtube")
+        script(src="scripts/scripts.min.js") 
